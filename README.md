@@ -10,9 +10,9 @@ see demo_simulation.m, demo_longtime.m, demo_shorttime.m for detailed examples u
 
 The code here uses several other toolboxes...
 
-% https://github.com/mullerlab/wave-matlab
-% https://github.com/mullerlab/generalized-phase
-% https://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics
+[mullerlab/wave-matlab](https://github.com/mullerlab/wave-matlab)
+[mullerlab/generalized-phase](https://github.com/mullerlab/generalized-phase)
+[circstats toolbox](https://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics)
 % https://ltfat.org/doc/filterbank/
 % chronus
 
