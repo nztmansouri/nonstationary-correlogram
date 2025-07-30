@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 %%
-fs = 1000;      % Sampling frequency (Hz)
+fs = 1000;% Sampling frequency (Hz)
 dt=1/fs; 
 
 % correlograms and stas...
@@ -18,9 +18,9 @@ data.time = linspace(0, T, T * fs)';  % Time vector
 
 
 % Simulated LFP #1 - Ramped sin
-% f = 4;         % Frequency of the sinusoid (Hz)
-% r_rate = 0.25;   % Ramp rate for amplitude increase
-% data.lfp = cos(2 * pi * f * data.time) .* ((r_rate * data.time/T*5 + 1));
+f = 4;         % Frequency of the sinusoid (Hz)
+r_rate = 0.25;   % Ramp rate for amplitude increase
+data.lfp = cos(2 * pi * f * data.time) .* ((r_rate * data.time/T*5 + 1));
 
 % % Simulated LFP #2 - Chirp
 f0=1; f1=10;
@@ -61,12 +61,10 @@ grid on;
 set(gca,'TickDir','out')
 subplot(3,1,2);
 stem(data.time, spike_train1, 'r', 'Marker', 'none');
-% stem(data.time, spike_train1>=1, 'r', 'Marker', 'none');
 xlim(xl)
 set(gca,'TickDir','out')
 subplot(3,1,3);
 stem(data.time, spike_train2, 'b', 'Marker', 'none');
-% stem(data.time, spike_train2>=1, 'b', 'Marker', 'none');
 xlim(xl)
 xlabel('Time (s)');
 set(gca,'TickDir','out')
@@ -102,15 +100,15 @@ ax(1)=subplot(2,2,2);
 bar(params.sta_t,mdl_freq2.c,1);
 hold on
 plot(params.sta_t,mdl_freq2.gchat)
-ylim([0 900])
-yticks([0 200 400 600 900])
+ylim([0 600])
+yticks([0 200 400 600])
 hold off; box off; set(gca,'TickDir','out')
 ax(2)=subplot(2,2,1);
 bar(params.sta_t,mdl_freq1.c,1);
 hold on
 plot(params.sta_t,mdl_freq1.gchat)
-ylim([0 900])
-yticks([0 200 400 600 900])
+ylim([0 600])
+yticks([0 200 400 600])
 hold off; box off; set(gca,'TickDir','out')
 linkaxes(ax)
 legend('spike counts','Model')
@@ -140,7 +138,7 @@ figure(4);
 clf
 f = f(f<mdl.Fc);
 plot(f,abs(mdl_freq1.Pa), f,abs(mdl_freq2.Pa));
-ylim([0 1000]);
+ylim([0 1200]);
 xlim([0 30]);
 hold off; box off; set(gca,'TickDir','out')
 
@@ -148,6 +146,14 @@ figure(3);
 bar(params.sta_t,mdl_freq.c,1);
 hold on
 plot(params.sta_t,mdl_freq.gchat)
-ylim([0 900])
-yticks([0 200 400 600 800 900])
+ylim([0 1200])
+yticks([0  600  1200])
+hold off; box off; set(gca,'TickDir','out')
+
+% plot STAs
+figure(7);
+plot(params.sta_t,mdl_freq.sta1)
+ylim([-1 1])
+hold on
+plot(params.sta_t,mdl_freq.sta2)
 hold off; box off; set(gca,'TickDir','out')
