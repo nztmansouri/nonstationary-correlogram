@@ -14,7 +14,4 @@ The code here uses several other toolboxes...
 [mullerlab/generalized-phase](https://github.com/mullerlab/generalized-phase)
 [circstats toolbox](https://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics)
 % https://ltfat.org/doc/filterbank/
-% chronus
-
-[http:\aaa] ltfat
-[] ltfat
+% chronu
