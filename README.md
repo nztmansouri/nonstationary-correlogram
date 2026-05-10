@@ -10,8 +10,13 @@ see Figure1.m demo, Figure3.m, Figure6.m, Figure 7.m and Figure8.m for detailed 
 
 The code here uses several other toolboxes:
 
-[mullerlab/wave-matlab](https://github.com/mullerlab/wave-matlab)
-[mullerlab/generalized-phase](https://github.com/mullerlab/generalized-phase)
-[circstats toolbox](https://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics)
-[The Large Time-Frequency Analysis Toolbox(LTFAT): Morlet wavelet](https://ltfat.org/doc/filterbank/).
-% [chronux](https://chronux.org/)
+[mullerlab/wave-matlab](https://github.com/mullerlab/wave-matlab) \
+
+[mullerlab/generalized-phase](https://github.com/mullerlab/generalized-phase) \
+
+[circstats toolbox](https://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics) \
+
+[The Large Time-Frequency Analysis Toolbox(LTFAT): Morlet wavelet](https://ltfat.org/doc/filterbank/).\
+
+ [chronux](https://chronux.org/). \
+ 
