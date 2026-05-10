@@ -78,7 +78,7 @@ par.tapers = [6 11]; % [TW K];
 movingwin = [params.window_size, params.window_stride];
 [S_lfp,t_lfp,F_lfp] = mtspecgramc(data.lfp(:,mdl.chan),movingwin,par);
 
-%% Figure 6.A)
+%% Figure 7.A)
 timel = [ 19.8, 2.7 22.4 , 37.6]; % Example frequencies for the lines
 
 % Define colors (matching your request)
@@ -156,7 +156,7 @@ set(gca,'YDir','normal')
 xlim([1 45])
 
 
-%%  Figure 6.B and C)
+%%  Figure 7.B and C)
 rescale = mean(diff(params.sta_t))/mean(diff(params.t));
 % for B) 19.8 and 2.72 for freq difference
 % for C) 22.45 and 37.6 for amplitude diff
