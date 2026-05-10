@@ -16,7 +16,7 @@ The code here uses several other toolboxes:
 
 [circstats toolbox](https://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics) 
 
-[The Large Time-Frequency Analysis Toolbox(LTFAT): Morlet wavelet](https://ltfat.org/doc/filterbank/).
+[The Large Time-Frequency Analysis Toolbox(LTFAT)](https://ltfat.org/doc/filterbank/)
 
- [chronux](https://chronux.org/). 
+ [chronux](https://chronux.org/) 
  
